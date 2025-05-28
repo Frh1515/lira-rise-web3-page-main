@@ -3,7 +3,7 @@
   "name": "Lira Coin WebApp",
   "url": "https://www.lyracoine.com",
   "icons": [
-    "https://www.lyracoine.com/icon.png"
+    "https://i.postimg.cc/5yNL8pnT/liracoin-logo.png"
   ],
   "bridge": {
     "type": "ton-connect",
