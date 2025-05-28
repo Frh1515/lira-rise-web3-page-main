@@ -1,0 +1,12 @@
+{
+  "manifest_version": "0.0.1",
+  "name": "Lira Coin WebApp",
+  "url": "https://[YOUR-PRODUCTION-DOMAIN]",
+  "icons": [
+    "https://[YOUR-PRODUCTION-DOMAIN]/icon.png"
+  ],
+  "bridge": {
+    "type": "ton-connect",
+    "url": "https://bridge.tonapi.io/bridge"
+  }
+}
