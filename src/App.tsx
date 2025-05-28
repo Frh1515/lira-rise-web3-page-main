@@ -18,7 +18,7 @@ import ManifestUploader from "./components/ManifestUploader";
 const queryClient = new QueryClient();
 
 // Use the verified public bucket manifest URL
-const TONCONNECT_MANIFEST_URL = "https://ypyprwnpfseijepscfht.supabase.co/storage/v1/object/public/public-files/tonconnect/tonconnect-manifest.json";
+const TONCONNECT_MANIFEST_URL = "https://www.lyracoine.com/tonconnect-manifest.json";
 
 const App = () => (
   <TonConnectUIProvider manifestUrl={TONCONNECT_MANIFEST_URL}>
