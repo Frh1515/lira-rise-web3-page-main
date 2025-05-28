@@ -4,7 +4,7 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { TonConnectUIProvider } from '@tonconnect/ui-react';
+import { TonConnectUIProvider, THEME } from '@tonconnect/ui-react';
 import { LanguageProvider } from "./contexts/LanguageContext";
 import Index from "./pages/Index";
 import Tasks from "./pages/Tasks";
@@ -21,7 +21,24 @@ const queryClient = new QueryClient();
 const TONCONNECT_MANIFEST_URL = "https://www.lyracoine.com/tonconnect-manifest.json";
 
 const App = () => (
-  <TonConnectUIProvider manifestUrl={TONCONNECT_MANIFEST_URL}>
+  <TonConnectUIProvider 
+    manifestUrl={TONCONNECT_MANIFEST_URL}
+    uiPreferences={{
+      theme: THEME.DARK,
+      colorsSet: {
+        [THEME.DARK]: {
+          connectButton: {
+            background: '#3D7BFF',
+            foreground: '#3D7BFF'
+          }
+        }
+      }
+    }}
+    actionsConfiguration={{
+      modals: ['before', 'success'],
+      notifications: ['before', 'success']
+    }}
+  >
     <QueryClientProvider client={queryClient}>
       <LanguageProvider>
         <TooltipProvider>
