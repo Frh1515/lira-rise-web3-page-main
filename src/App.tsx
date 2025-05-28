@@ -13,7 +13,6 @@ import Referrals from "./pages/Referrals";
 import Profile from "./pages/Profile";
 import NotFound from "./pages/NotFound";
 import BottomNavigation from "./components/BottomNavigation";
-import ManifestUploader from "./components/ManifestUploader";
 
 const queryClient = new QueryClient();
 
@@ -44,7 +43,6 @@ const App = () => (
         <TooltipProvider>
           <Toaster />
           <Sonner />
-          <ManifestUploader />
           <BrowserRouter>
             <div className="relative">
               <Routes>
