@@ -2,9 +2,9 @@
   "manifest_version": "0.0.1",
   "name": "Lira Coin WebApp",
   "url": "https://www.lyracoine.com",
-  "icons": [
-    "https://i.postimg.cc/5yNL8pnT/liracoin-logo.png"
-  ],
+  "iconUrl": "https://www.lyracoine.com/liracoin-logo.png",
+  "termsOfUseUrl": "https://www.lyracoine.com/terms",
+  "privacyPolicyUrl": "https://www.lyracoine.com/privacy",
   "bridge": {
     "type": "ton-connect",
     "url": "https://bridge.tonapi.io/bridge"
