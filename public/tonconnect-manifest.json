@@ -1,10 +1,10 @@
 {
   "manifest_version": "0.0.1",
   "name": "Lira Coin WebApp",
-  "url": "https://www.lyracoine.com",
-  "iconUrl": "https://www.lyracoine.com/icon.png",
-  "termsOfUseUrl": "https://www.lyracoine.com/terms",
-  "privacyPolicyUrl": "https://www.lyracoine.com/privacy",
+  "url": "http://localhost:8080",
+  "iconUrl": "http://localhost:8080/icon.png",
+  "termsOfUseUrl": "http://localhost:8080/terms",
+  "privacyPolicyUrl": "http://localhost:8080/privacy",
   "bridge": {
     "type": "ton-connect",
     "url": "https://bridge.tonapi.io/bridge"
