@@ -1,3 +1,0 @@
-Act as a WebApp expert building an interactive Telegram-based crypto app for a new digital currency called Lira Coin. The app should be simple, fast, and fully integrated with Supabase as a backend.
-
-User identity is based on Telegram ID. The app should include a homepage, profile, tasks, and referral system with support for Arabic/English language switching.
