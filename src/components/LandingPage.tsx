@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Wallet, ShoppingCart, Link2, DollarSign, Users, TrendingUp, Facebook, Instagram, Globe, Send } from 'lucide-react';
+import { Wallet, Link2, DollarSign, Users, TrendingUp, Facebook, Instagram, Globe, Send } from 'lucide-react';
 import WalletConnect from '@/components/WalletConnect';
 
 const LandingPage = () => {
@@ -37,8 +37,6 @@ const LandingPage = () => {
       getReferralDesc: "Receive your unique referral link to share with friends and family.",
       earnRewards: "Earn Rewards",
       earnRewardsDesc: "Earn rewards for every successful purchase made through your referral link.",
-      buyNow: "Buy Now",
-      buyNowDesc: "Start your journey with LYRA COIN today",
       smartContract: "Smart Contract Integration",
       webThree: "Web3 functionality coming soon...",
       referralNote: "* Referral link activates only after purchase",
@@ -63,8 +61,6 @@ const LandingPage = () => {
       getReferralDesc: "احصل على رابط الإحالة الفريد الخاص بك لمشاركته مع الأصدقاء والعائلة.",
       earnRewards: "اكسب المكافآت",
       earnRewardsDesc: "اكسب مكافآت عن كل عملية شراء ناجحة تتم من خلال رابط الإحالة الخاص بك.",
-      buyNow: "اشتري الآن",
-      buyNowDesc: "ابدأ رحلتك مع LYRA COIN اليوم",
       smartContract: "تكامل العقد الذكي",
       webThree: "وظائف Web3 قادمة قريباً...",
       referralNote: "* رابط الإحالة يُفعل فقط بعد الشراء",
@@ -221,7 +217,7 @@ const LandingPage = () => {
             <Card className="bg-card-gradient backdrop-blur-sm border border-lira-green/20 shadow-card-glow hover:shadow-glow transition-all duration-300 group">
               <CardContent className="p-3 text-center">
                 <div className="w-10 h-10 mx-auto mb-2 bg-lira-green/20 rounded-full flex items-center justify-center group-hover:bg-lira-green/30 transition-colors duration-300">
-                  <ShoppingCart className="h-5 w-5 text-lira-green" />
+                  <Wallet className="h-5 w-5 text-lira-green" />
                 </div>
                 <h3 className="text-base font-bold mb-1 text-white">{t.buyTokens}</h3>
                 <p className="text-xs text-gray-300">{t.buyTokensDesc}</p>
@@ -249,24 +245,6 @@ const LandingPage = () => {
                 <p className="text-xs text-gray-300">{t.earnRewardsDesc}</p>
               </CardContent>
             </Card>
-          </div>
-
-          {/* Compact Buy Now Section */}
-          <div className="bg-gradient-to-r from-lira-darker/50 to-lira-darkest/50 rounded-2xl p-4 mb-6">
-            <h2 className="text-xl md:text-2xl font-bold mb-3 text-white">
-              {t.buyNow}
-            </h2>
-            <p className="text-base text-gray-300 mb-4">
-              {t.buyNowDesc}
-            </p>
-
-            <div className="bg-card-gradient backdrop-blur-sm border border-lira-green/20 rounded-2xl p-3 max-w-xl mx-auto shadow-card-glow">
-              <p className="text-sm text-gray-300 mb-1">{t.smartContract}</p>
-              <p className="text-lira-green font-semibold text-sm">{t.webThree}</p>
-              <p className="text-xs text-gray-400 mt-1">
-                {t.referralNote}
-              </p>
-            </div>
           </div>
 
           {/* Compact Live Stats */}
