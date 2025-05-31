@@ -138,23 +138,8 @@ const LandingPage = () => {
             {t.subtitle}
           </p>
 
-          {/* Connect Wallet Button - Now using WalletConnect component */}
+          {/* Connect Wallet Button */}
           <WalletConnect className="mb-4 animate-glow-pulse" />
-
-          {/* Token Price */}
-          <div className="bg-card-gradient backdrop-blur-sm border border-lira-green/20 rounded-2xl p-4 max-w-sm mx-auto shadow-card-glow mb-6">
-            <p className="text-sm text-gray-300 mb-2">{t.currentPrice}</p>
-            <div className="flex items-center justify-center gap-2">
-              <img 
-                src="https://cryptologos.cc/logos/bnb-bnb-logo.png" 
-                alt="BNB" 
-                className="w-6 h-6"
-              />
-              <p className="text-2xl font-bold bg-gradient-to-r from-[#F3BA2F] to-[#F0B90B] bg-clip-text text-transparent">
-                0.01 BNB
-              </p>
-            </div>
-          </div>
 
           {/* Compact Sharing Section */}
           <div className="bg-gradient-to-r from-lira-darker/30 to-lira-darkest/30 rounded-2xl p-4 mb-6">
