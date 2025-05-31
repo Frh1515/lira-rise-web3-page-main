@@ -39,7 +39,6 @@ const LandingPage = () => {
       earnRewardsDesc: "Earn rewards for every successful purchase made through your referral link.",
       buyNow: "Buy Now",
       buyNowDesc: "Start your journey with LYRA COIN today",
-      buyLira: "Buy LYRA",
       smartContract: "Smart Contract Integration",
       webThree: "Web3 functionality coming soon...",
       referralNote: "* Referral link activates only after purchase",
@@ -66,7 +65,6 @@ const LandingPage = () => {
       earnRewardsDesc: "اكسب مكافآت عن كل عملية شراء ناجحة تتم من خلال رابط الإحالة الخاص بك.",
       buyNow: "اشتري الآن",
       buyNowDesc: "ابدأ رحلتك مع LYRA COIN اليوم",
-      buyLira: "شراء LYRA",
       smartContract: "تكامل العقد الذكي",
       webThree: "وظائف Web3 قادمة قريباً...",
       referralNote: "* رابط الإحالة يُفعل فقط بعد الشراء",
@@ -261,13 +259,6 @@ const LandingPage = () => {
             <p className="text-base text-gray-300 mb-4">
               {t.buyNowDesc}
             </p>
-            
-            <Button 
-              size="lg" 
-              className="bg-button-gradient hover:bg-button-gradient text-black font-bold text-lg px-8 py-4 rounded-full shadow-glow hover:shadow-glow-lg transition-all duration-300 mb-4"
-            >
-              {t.buyLira}
-            </Button>
 
             <div className="bg-card-gradient backdrop-blur-sm border border-lira-green/20 rounded-2xl p-3 max-w-xl mx-auto shadow-card-glow">
               <p className="text-sm text-gray-300 mb-1">{t.smartContract}</p>
