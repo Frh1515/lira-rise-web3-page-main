@@ -23,7 +23,7 @@ function ProtectedRoute({ children }: { children: React.ReactNode }) {
 
 function App() {
   return (
-    <TonConnectUIProvider>
+    <TonConnectUIProvider manifestUrl="/tonconnect-manifest.json">
       <AuthProvider>
         <Router>
           <Routes>
