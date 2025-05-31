@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { TonConnectButton, useTonConnectUI, useTonWallet } from '@tonconnect/ui-react';
 import { Button } from '@/components/ui/button';
@@ -14,12 +13,21 @@ const WalletConnect: React.FC<WalletConnectProps> = ({ className }) => {
   const isConnected = !!wallet;
 
   const handleConnect = async () => {
-    if (isConnected) {
-      // Disconnect wallet
-      await tonConnectUI.disconnect();
-    } else {
-      // Connect wallet
-      await tonConnectUI.connectWallet();
+    try {
+      if (!tonConnectUI) {
+        console.error('TonConnect UI is not initialized');
+        return;
+      }
+
+      if (isConnected) {
+        // Disconnect wallet
+        await tonConnectUI.disconnect();
+      } else {
+        // Connect wallet
+        await tonConnectUI.connectWallet();
+      }
+    } catch (error) {
+      console.error('Error handling wallet connection:', error);
     }
   };
 
