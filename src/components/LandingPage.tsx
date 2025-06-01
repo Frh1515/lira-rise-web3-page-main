@@ -139,7 +139,7 @@ const LandingPage = () => {
           </p>
 
           {/* Connect Wallet Button */}
-          <WalletConnect className="mb-4 animate-glow-pulse" />
+          <WalletConnect className="mb-4 animate-glow-pulse mx-auto" />
 
           {/* Compact Sharing Section */}
           <div className="bg-gradient-to-r from-lira-darker/30 to-lira-darkest/30 rounded-2xl p-4 mb-6">
