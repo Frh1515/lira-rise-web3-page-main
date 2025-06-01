@@ -8,6 +8,12 @@ export default defineConfig({
     port: 8080,
     hmr: {
       overlay: false
+    },
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
+      "Access-Control-Allow-Headers": "X-Requested-With, content-type, Authorization",
+      "Content-Security-Policy": "frame-ancestors 'self' https://ton.org https://*.ton.org https://*.tonkeeper.com"
     }
   },
   plugins: [react()],

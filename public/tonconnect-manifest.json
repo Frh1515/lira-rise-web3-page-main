@@ -1,9 +1,9 @@
 {
-  "url": "https://lyracoin.vercel.app",
+  "url": "https://8080-stackblitz-webcontainer.ws",
   "name": "Lira Coin WebApp",
   "iconUrl": "https://ypyprwnpfseijepscfht.supabase.co/storage/v1/object/public/public/lyra-icon.png",
-  "termsOfUseUrl": "https://lyracoin.vercel.app/terms",
-  "privacyPolicyUrl": "https://lyracoin.vercel.app/privacy",
+  "termsOfUseUrl": "https://8080-stackblitz-webcontainer.ws/terms",
+  "privacyPolicyUrl": "https://8080-stackblitz-webcontainer.ws/privacy",
   "manifest_version": "0.1",
   "bridge": {
     "type": "sse",
