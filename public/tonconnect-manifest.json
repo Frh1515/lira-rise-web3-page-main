@@ -1,12 +1,12 @@
 {
-  "manifest_version": "0.0.1",
+  "url": "https://lyracoin.vercel.app",
   "name": "Lira Coin WebApp",
-  "url": "https://www.lyracoine.com",
-  "iconUrl": "https://www.lyracoine.com/icon.png",
-  "termsOfUseUrl": "https://www.lyracoine.com/terms",
-  "privacyPolicyUrl": "https://www.lyracoine.com/privacy",
+  "iconUrl": "https://ypyprwnpfseijepscfht.supabase.co/storage/v1/object/public/public/lyra-icon.png",
+  "termsOfUseUrl": "https://lyracoin.vercel.app/terms",
+  "privacyPolicyUrl": "https://lyracoin.vercel.app/privacy",
+  "manifest_version": "0.1",
   "bridge": {
-    "type": "ton-connect",
+    "type": "sse",
     "url": "https://bridge.tonapi.io/bridge"
   }
 }
